@@ -1,0 +1,62 @@
+footer {
+  nav {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    ul + ul {
+      li {
+        div {
+          display: block;
+          img,
+          p {
+            display: inline;
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+  background-color: black;
+  color: white;
+  img {
+    width: 20px;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    input,
+    button {
+      height: 50px;
+      outline: none;
+      border: none;
+      border-radius: 12px;
+    }
+    input {
+      width: 295px;
+      margin-bottom: 1.5rem;
+    }
+    button {
+      width: 175px;
+      background-color: hsl(322, 100%, 66%);
+      color: white;
+    }
+  }
+}
+
+@media (min-width: 375px) {
+  footer {
+    nav {
+      display: flex;
+      flex-direction: row-reverse;
+      ul + ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      label {
+        display: block;
+      }
+    }
+  }
+}

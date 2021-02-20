@@ -1,0 +1,36 @@
+.tool_communicate {
+    padding-top: 4rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-bottom: 2rem;
+    img {
+      width: 20%;
+    }
+    b {
+      font-size: 50px;
+      color: hsl(192, 100%, 9%);
+    }
+    h3 {
+      color: hsl(207, 100%, 98%);
+    }
+
+  }
+ 
+}
+@media (min-width: 375px) {
+  .tool_communicate {
+    display: flex;
+    justify-content: space-between;
+    div {
+      b {
+     font-size: 70px;
+   }
+  }
+  }
+
+}

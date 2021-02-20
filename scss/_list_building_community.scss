@@ -1,0 +1,47 @@
+.list_building_community {
+  section {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .grow_together {
+  
+    p {
+      background-image: url(../images/bg-section-bottom-mobile-1.svg);
+      background-repeat: no-repeat;
+    } 
+  }
+}
+
+@media (min-width: 375px) {
+  .list_building_community {
+    section {
+      display: flex;
+      text-align: start;
+      align-items: center;
+      margin-bottom: 4rem;
+      img {
+        width: 45%;
+      }
+      p {
+        font-size: 20px;
+      }
+      div {
+        width: 46%;
+        margin-right: auto;
+        h2 {
+          font-size: 45px;
+        }
+      }
+    }
+    .your_users , .grow_together {
+       flex-direction: row-reverse;
+    }
+    .following_conversation {
+      div {
+        margin-left: auto;
+        margin-right: 0;
+      }
+    }
+  }
+}
