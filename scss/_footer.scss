@@ -1,9 +1,15 @@
 footer {
+  margin-top: -2rem;
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  padding-top: 2rem;
   nav {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
-    ul + ul {
+    display: flex;
+    flex-direction: column-reverse;
+    ul {
       li {
         div {
           display: block;
@@ -16,10 +22,12 @@ footer {
       }
     }
   }
-  background-color: black;
-  color: white;
+
   img {
     width: 20px;
+  }
+  .logo_white img {
+    width: 50%;
   }
   label {
     display: flex;
@@ -46,13 +54,42 @@ footer {
 
 @media (min-width: 375px) {
   footer {
+    margin-top: 10rem;
+    padding-bottom: 10rem;
+    background-image: url(../images/bg-footer-top-desktop.svg);
+    background-repeat: no-repeat;
     nav {
+      width: 87%;
       display: flex;
-      flex-direction: row-reverse;
-      ul + ul{
+      flex-direction: row;
+      justify-content: space-between;
+      ul {
+        width: 30%;
+        margin: 0;
+        li {
+          p,
+          h2 {
+            margin: 0;
+          }
+         p {
+          padding-top: 1.5rem;
+          padding-bottom: 3rem;
+         }
+        }
+      }
+      .all-link-search {
+        padding-top: 4rem;
+      }
+      ul + ul {
+        margin: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
+        width: 50%;
+        p {
+          width: 60%;
+        }
       }
       label {
         display: block;
